@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <h1>Arrays in JavaScript</h1>
-    <h3 id = "t1"></h3>
+    <h3 id="t1"></h3>
     <h3 id = "t2"></h3>
     <h3 id = "t3"></h3>
+    <h3 id = "t4"></h3>
     <script>
-        var student = {name : "Renesha", fav_sport : "basketball", age : 12};
-        var colours = ["white", "blue", "red", "pink", "yellow"];
-        document.getElementById('t1').innerHTML = "Hi, I am " + student.name + ". I am " + student.age + " years old and I love to play " + student.fav_sport;
-        document.getElementById('t2').innerHTML = 'My favourite colours are: ' + colours.join(" * ");
+    var a = ["Zoya", 10, "USA"];
+    document.getElementById('t1').innerHTML = "Hi, I am " + a[0] + " . I am " + a[1] + " years old." + "I live in " + a[2] + " .";
+    document.getElementById('t2'),innerHTML = a.join(" * ");
+    document.getElementById('t3').innerHTML = a.pop();
+    document.getElementById('t4').innerHTML = a ;
     </script>
 </body>
 </html>
